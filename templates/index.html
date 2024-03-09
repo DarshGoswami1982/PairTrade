@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Stock Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pairtrade">Pair Trade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Welcome to Stock Analysis App</h1>
+        <p>
+            Our Stock Analysis App provides you with the tools and insights you need to make informed investment decisions.
+            Whether you're a seasoned investor or just starting out, our app can help you analyze stocks and develop trading
+            strategies.
+        </p>
+        <h2>Key Terms</h2>
+        <h3>Pair Trading</h3>
+        <p>
+            Pair trading is a trading strategy that involves matching a long position with a short position in two
+            correlated stocks. The idea is to profit from the relative performance of the two stocks rather than the
+            overall direction of the market.
+        </p>
+        <h3>Spread Difference</h3>
+        <p>
+            The spread difference is the difference in prices between the two stocks in a pair trade. It represents the
+            relative value of one stock compared to the other. Traders look for deviations from the historical spread
+            difference to identify potential trading opportunities.
+        </p>
+        <h3>Z-Score</h3>
+        <p>
+            The z-score is a statistical measure that quantifies how far a data point is from the mean of a data set,
+            measured in terms of standard deviations. In pair trading, the z-score is used to determine whether the spread
+            difference between two stocks is statistically significant. A high z-score indicates that the spread difference
+            is likely to revert to its mean, presenting a trading opportunity.
+        </p>
+        <h2>Trading Strategy</h2>
+        <p>
+            To trade using pair trading and the spread difference, traders typically follow these steps:
+        </p>
+        <ol>
+            <li>Identify a pair of correlated stocks.</li>
+            <li>Calculate the spread difference between the two stocks.</li>
+            <li>Calculate the z-score of the spread difference.</li>
+            <li>Enter a long position on the underperforming stock and a short position on the outperforming stock when
+                the z-score is high (indicating that the spread difference is likely to revert to its mean).</li>
+            <li>Exit the positions when the spread difference returns to its historical average.</li>
+        </ol>
+        <p>
+            By following this strategy, traders aim to profit from the relative movements of the two stocks while minimizing
+            exposure to overall market risk.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
